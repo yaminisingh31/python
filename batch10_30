@@ -1,0 +1,11 @@
+import shelve
+user1={name:john",password:"123@",balance:20000}
+user2={name:"Jerry",password:"321@",balance:20030}
+user3={name:"sam",password:"sam123",balance:90000}
+db=shelve.open("dbdata\initial_details")
+db['1000']=user1
+db['1001']=user2
+db['1003']=user3
+db[last_acc]=1003
+db.close()
+
